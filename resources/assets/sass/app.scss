@@ -1,0 +1,148 @@
+@import "./style";
+
+.page-logo {
+  img {
+    height: 65px;
+    margin-top: -15px;
+  }
+}
+
+.page-header.navbar {
+  background: #fff;
+}
+
+.page-footer {
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  height: 70px;
+  padding: 5px;
+  width: calc(100% - 235px);
+}
+
+body {
+  margin-bottom: 90px !important;
+}
+
+@media (max-width: 767px) {
+  body {
+    margin-bottom: 210px !important;
+  }
+
+  .page-footer {
+    height: 180px;
+    padding: 5px;
+    width: 100%;
+  }
+}
+
+
+.page-footer-inner {
+  text-align: center;
+  width: 100%;
+
+  ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+      padding: 5px 20px;
+      border-right: 1px solid #ddebf6;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+
+.page-header.navbar .top-menu .navbar-nav > li.dropdown .dropdown-toggle:hover {
+  background: #fff;
+}
+
+
+
+.dashboard a,
+.dashboard a:hover {
+  text-decoration: none;
+}
+
+.dashboard .number {
+  text-align: center;
+  justify-content: center;
+
+  small {
+    font-size: 14px;
+    color: #AAB5BC;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+.login {
+  .page-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow-y: scroll;
+  }
+
+  .copyright {
+    font-weight: 600;
+    color: #000;
+    font-size: 1.1em;
+
+    a {
+      color: #000;
+    }
+  }
+
+  .form-group button {
+    margin-top: 20px;
+    border-radius: 0;
+  }
+
+  .form-control {
+    border-radius: 0;
+  }
+
+  label.checkbox {
+    margin-left: 10px;
+  }
+
+  form {
+    padding: 0 20px;
+  }
+
+  .form-holder {
+    background: #fff;
+    flex-basis:200px;
+    max-width: 350px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .logo {
+    margin: 0 auto 40px auto;
+    padding: 5px !important;
+    max-height: 100px;
+
+    img {
+      max-height: 100px;
+    }
+  }
+}
+
+
