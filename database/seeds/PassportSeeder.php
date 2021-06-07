@@ -16,7 +16,7 @@ class PassportSeeder extends Seeder
             [
                 'name' => config('app.name') . ' Personal Access Client',
                 'secret' => 'cVQaW1RljMOMlfRK2w3UUzA5kuFaxzhlpwApzx9t',
-                'redirect' => 'http://localhost',
+                'redirect' => config('app.url'),
                 'personal_access_client' => 1,
                 'password_client' => 0,
                 'revoked' => 0,
@@ -26,7 +26,7 @@ class PassportSeeder extends Seeder
             [
                 'name' => config('app.name') . ' Password Grant Client',
                 'secret' => 'gHATffqyaazsdK8sdgyxuadOYlLtAQBhsmuOPeia',
-                'redirect' => 'http://localhost',
+                'redirect' => config('app.url'),
                 'personal_access_client' => 0,
                 'password_client' => 1,
                 'revoked' => 0,
