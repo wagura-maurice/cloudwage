@@ -48,7 +48,7 @@ task('fanya:mambo', function () {
     run('{{bin/php}} {{release_path}}/artisan config:cache');
     // Clear and cache view
     run('{{bin/php}} {{release_path}}/artisan view:clear');
-    run('{{bin/php}} {{release_path}}/artisan view:cache');
+    // run('{{bin/php}} {{release_path}}/artisan view:cache');
     // create storage link for the release
     run('{{bin/php}} {{release_path}}/artisan storage:link');
     // optimize config and cache
