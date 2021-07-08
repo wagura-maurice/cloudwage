@@ -14,13 +14,13 @@ class CompanyProfilesTableSeeder extends Seeder
     {
         DB::table('company_profiles')->insert([
             'logo' => 'images/smalllogo.jpg',
-            'name' => 'Wise & Agile Solutions',
+            'name' => 'Demo Company',
             'city' => 'Nairobi',
             'country' => 'Kenya',
-            'phone' => '020-5252453',
-            'mobile' => '0711408108 / 0732456456',
-            'email' => 'info@wizag.biz',
-            'website' => 'http://wizag.biz',
+            'phone' => '020-XXXXXXX',
+            'mobile' => '07XXXXXXXX / 07XXXXXXXX',
+            'email' => 'demo@example.com',
+            'website' => 'http://example.com',
             'kra_pin' => ' ',
             'currency_id' => '75',
             'created_at' => Carbon::now(),

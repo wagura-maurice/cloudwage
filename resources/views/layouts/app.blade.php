@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="keywords" content="payroll, kenya, nairobi, east africa, wages, paye, deductions, allowances, pay roll, wizag, cloud, cloudwage, cloudpay, payments">
-    <meta name="description" content="CloudWage is your number one payroll partner in Kenya and the world. Generate your payroll from anywhere in the world.">
-    <title>{{ config('app.name', 'CloudWage') }}</title>
+    <meta name="keywords" content="payroll, kenya, nairobi, east africa, wages, paye, deductions, allowances, pay roll, cloud payments">
+    <meta name="description" content="{{ ucwords(config('app.name')) }} is your number one payroll partner in Kenya and the world. Generate your payroll from anywhere in the world.">
+    <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
     <link rel="stylesheet" href="{{ asset('css/startup.css') }}">
     @yield('header')
@@ -22,7 +22,7 @@
     <nav class="n">
         <div class="nav-wrapper">
             <a href="{{ url('/') }}" class="brand-logo" style="height: 80%;margin-top: 5px;">
-                <img src="{{ asset('/images/logo2.png') }}" alt="CloudWage" style="/**height: 100%**/">
+                <img src="{{ asset('/images/logo2.png') }}" alt="{{ ucwords(config('app.name')) }}" style="/**height: 100%**/">
             </a>
             <ul id="nav-mobile" class="ag hide-on-med-and-down">
                 <li><a class="waves-effect waves-teal{{ Route::is('welcome') ? ' scroll' : '' }}" href="/#home">Home</a></li>
@@ -48,10 +48,10 @@
         <div class="dv">
             <div class="c">
                 <div class="d ka ko">
-                    <a href="https://wizag.biz" target="_blank">
+                    <a href="#" target="_blank">
                         <img class="materialize-logo" src="{{ asset('images/wizag.png') }}" alt="">
                     </a>
-                    <p>&copy;{{ Carbon\Carbon::now()->year }} Wise & Agile Solutions Limited.</p>
+                    <p>&copy;{{ Carbon\Carbon::now()->year }} {{ ucwords(config('app.name')) }}</p>
                 </div>
                 <div class="d ka ko">
                     <h5>About</h5>

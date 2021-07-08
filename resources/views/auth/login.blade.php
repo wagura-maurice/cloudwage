@@ -45,7 +45,7 @@
 <div class="page-content" style="background: url('/images/login_bg.jpg') no-repeat;background-size: cover;">
     <div class="form-holder">
         <div class="logo">
-            <img src="{{ asset('images/logo.png') }}" alt="Cloud Wage">
+            <img src="{{ asset('images/logo.png') }}" alt="{{ ucwords(config('app.name')) }}">
         </div>
         <!-- BEGIN LOGIN FORM -->
         <form class="form-horizontal logindetail" role="form" method="POST" action="{{ url('/login') }}">
@@ -117,7 +117,7 @@
     </div>
 
     <div class="copyright">
-        {{ \Carbon\Carbon::now()->year }} &copy; <a href="http://wizag.biz" target="_blank"> Wise & Agile Solutions</a>
+        {{ \Carbon\Carbon::now()->year }} &copy; <a href="{{ url('/') }}" target="_blank"> {{ ucwords(config('app.name')) }}</a>
     </div>
 </div>
 <!-- END LOGIN -->
